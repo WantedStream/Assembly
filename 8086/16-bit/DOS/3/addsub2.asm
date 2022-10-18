@@ -1,9 +1,9 @@
 .MODEL SMALL
 .STACK 100h
 .DATA
-    a DB 38 
-    b DB 23
-    C DB 36
+    a DB 38d 
+    b DB 23d
+    C DB 36d
 .CODE
 start:
     mov  ax, @DATA
