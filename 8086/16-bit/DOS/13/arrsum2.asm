@@ -6,7 +6,7 @@ sum db ?
 .CODE
 start:
 
-mov ax,4c00h
+mov ax,@Data
 mov ds,ax
 
 mov ax,0
@@ -15,7 +15,7 @@ mov si,0
 again:
 add al,a[si]
 inc si
-cmp a[si],-1d
+cmp a[si-1],-1d
 jne again
 
 mov sum,al
