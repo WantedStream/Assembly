@@ -8,9 +8,11 @@ mov ds,ax
 
 call terminateProg
 
-
+int 21h
 terminateProg PROC
 mov ax,4c00h
-int 21h
+
 terminateProg ENDP
+
+
 end start
